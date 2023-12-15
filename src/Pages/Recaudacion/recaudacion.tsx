@@ -16,10 +16,9 @@ import { ChevronDownIcon, MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 import { useNavigate } from 'react-router-dom'
 
 const navigation = [
-    { name: 'Datos Alumno', href: '#', icon: HomeIcon, current: true },
-    { name: 'Matriculas', href: '#', icon: UsersIcon, current: false },
-    { name: 'Mensualidad', href: '#', icon: FolderIcon, current: false },
-    { name: 'Calendario', href: '#', icon: CalendarIcon, current: false },
+    { name: 'Matriculas', href: '/recaudacion/matricula/buscar', icon: HomeIcon, current: true },
+    { name: 'Mensualidades', href: '/recaudacion/mensualidad/buscar', icon: UsersIcon, current: false },
+    { name: 'Calendario', href: '/recaudacion/calendario', icon: CalendarIcon, current: false },
 
   ]
   

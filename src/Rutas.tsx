@@ -25,6 +25,16 @@ import { AllDocentesSostenedor } from "./Pages/Sostenedor/verDocentesSostenedor"
 import { AllAlumnosSostenedor } from "./Pages/Sostenedor/verAlumnosSostenedor";
 import { Cursos } from "./Pages/Sostenedor/cursos";
 import { Asignaturas } from "./Pages/Sostenedor/asignaturas";
+import { Mensualidades } from "./Pages/Recaudacion/mensualidades";
+import MensualidadesAlumno from "./Pages/Recaudacion/mensualidadesAlumno";
+import { Matriculas } from "./Pages/Recaudacion/matriculas";
+import MatriculaAlumno from "./Pages/Recaudacion/matriculaAlumno";
+import { AllRetiroAlumno } from "./Pages/Inspectoria/retiroAlumno";
+import { DatosRetiro } from "./Pages/Inspectoria/datosRetiro";
+import { Urgencias } from "./Pages/Inspectoria/urgencias";
+import { UrgenciasAlumno } from "./Pages/Inspectoria/urgenciasAlumno";
+import { Atraso } from "./Pages/Inspectoria/atraso";
+import { AtrasoAlumno } from "./Pages/Inspectoria/atrasoAlumno";
 
 export function Rutas() {
     return (
@@ -58,6 +68,13 @@ export function Rutas() {
 
 
           <Route path="/inspectoria" element={<Inspectoria />}></Route>
+          <Route path="/inspectoria/calendario" element={<Calendario />}></Route>
+          <Route path="/inspectoria/retiroalumno" element={<AllRetiroAlumno />}></Route>
+          <Route path="/inspectoria/retiroalumno/alumno" element={<DatosRetiro />}></Route>
+          <Route path="/inspectoria/urgencias" element={<Urgencias />}></Route>
+          <Route path="/inspectoria/urgencias/alumno" element={<UrgenciasAlumno />}></Route>
+          <Route path="/inspectoria/atraso" element={<Atraso />}></Route>
+          <Route path="/inspectoria/atraso/alumno" element={<AtrasoAlumno />}></Route>
 
           <Route path="/sostenedor" element={<Sostenedor />}></Route>
           <Route path="/sostenedor/docentes" element={<AllDocentesSostenedor />}></Route>
@@ -69,9 +86,11 @@ export function Rutas() {
           <Route path="/sostenedor/asignaturas" element={<Asignaturas />}></Route>
 
           <Route path="/recaudacion" element={<Recaudacion />}></Route>
-
-
-          <Route path="/recaudacion" element={<Calendario />}></Route>
+          <Route path="/recaudacion/calendario" element={<Calendario />}></Route>
+          <Route path="/recaudacion/mensualidad/buscar" element={<Mensualidades />}></Route>
+          <Route path="/recaudacion/mensualidad/alumno" element={<MensualidadesAlumno />}></Route>
+          <Route path="/recaudacion/matricula/buscar" element={<Matriculas />}></Route>
+          <Route path="/recaudacion/matricula/alumno" element={<MatriculaAlumno />}></Route>
           
 
 

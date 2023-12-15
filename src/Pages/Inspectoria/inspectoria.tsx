@@ -16,11 +16,10 @@ import { ChevronDownIcon, MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 import { useNavigate } from 'react-router-dom'
 
 const navigation = [
-    { name: 'Datos Alumno', href: '#', icon: HomeIcon, current: true },
-    { name: 'Atrasos', href: '#', icon: UsersIcon, current: false },
-    { name: 'Retiro Alumno', href: '#', icon: FolderIcon, current: false },
-    { name: 'Urgencias', href: '#', icon: CalendarIcon, current: false },
-    { name: 'Calendario', href: '#', icon: CalendarIcon, current: false },
+    { name: 'Atrasos', href: '/inspectoria/atraso', icon: UsersIcon, current: false },
+    { name: 'Retiro Alumno', href: '/inspectoria/retiroalumno', icon: FolderIcon, current: false },
+    { name: 'Urgencias', href: '/inspectoria/urgencias', icon: CalendarIcon, current: false },
+    { name: 'Calendario', href: '/inspectoria/calendario', icon: CalendarIcon, current: false },
 
   ]
   
